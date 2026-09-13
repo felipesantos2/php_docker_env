@@ -1,4 +1,4 @@
-FROM php:8.4.6-fpm-alpine3.21
+FROM php:8.5.10-fpm-alpine3.23
 
 LABEL maintainer="<github.com/felipesantos2>"
 
