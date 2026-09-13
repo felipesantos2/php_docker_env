@@ -1,0 +1,43 @@
+{
+    "$schema": "https://json-schema.org/draft-04/schema#",
+    "name": "felipesantos2/slim",
+    "description": "Tests with slim framework",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "felipesantos2",
+            "homepage": "https://github.com/felipesantos2",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.3",
+        "slim/slim": "^4.14",
+        "league/plates": "*",
+        "symfony/dotenv": "^7.2",
+        "doctrine/orm": "^3",
+        "slim/psr7": "^1.7",
+        "guzzlehttp/psr7": "^2",
+        "php-di/php-di": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        },
+        "files": [
+            "config/container.php",
+            "app/helpers/helper.php",
+            "app/routes/web.php"
+        ]
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^7.2",
+        "laravel/pint": "^1.22"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\": "tests/"
+        }
+    }
+  
+}
